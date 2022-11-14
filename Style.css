@@ -1,0 +1,355 @@
+body{
+    margin: 0%;
+	width: 100%;
+	max-width: 1600px;
+}
+
+.Heading
+{
+    background-color: #3399CC;
+    font-family: Arial, Helvetica, sans-serif; 
+    height: 140px;
+}
+
+.Heading h1{
+	margin: 2px;
+	float: left;
+	padding: 25px 30px;
+	font-size: 70px;
+	font-weight: 100;
+	color: white;
+}
+
+.Tabs {
+	background-color: black;
+	overflow: hidden;
+	padding: 0px 10px;
+}
+
+.Tabs ul{
+	list-style-type: none;
+	float: left;
+	padding: 0px 5px;
+}
+
+.Tabs li{
+	position: relative;
+	display: inline;
+	padding: 10px 10px;
+}
+
+.Tabs a{
+	text-decoration: none;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: white;
+}
+
+.Tabs img.ImageAlign{
+    float: right;
+	padding: 14px;
+	border-radius: 20px;
+    position: relative;
+}
+
+.Tabs li:hover{
+    background-color: orange;
+	border-left: 4px solid white;
+	color: black;
+	padding: 18px 8px;
+}
+
+.Tabs li:hover a{
+	color: black;
+}
+
+/* Contacts */
+
+.ContactsContainer{
+    position: relative;
+    top: 20px;
+    padding: 5px;
+    border: 0px solid black;
+    height: 500px;
+	height: calc(100vh -250px);
+    width: 370px;
+    background-color: transparent;
+	overflow-y: scroll;
+}
+
+.Text{
+    position: relative;
+    top: 15px;
+	left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 2px 10px;
+}
+
+.GridContainer >*{
+	position: relative;
+	top: 50px;
+	left: 12px;
+	width: 355px;
+	display: grid;
+	grid-template-rows: 120px;
+	overflow: hidden;
+}
+
+.GridContainer .Display{
+	position: relative;
+	top: 10px;
+	border: 1px solid rgb(204, 204, 204);
+	width: 338px;
+	cursor: pointer;
+}
+
+.GridContainer .Display:hover{
+	background-color: lightblue;
+	transition: .4s;
+	color: black;
+}
+
+.Display.active{
+	background-color: lightblue;
+	transition: .4s;
+	color: black;
+}
+
+.GridContainer .Display #ShowName{
+	position: relative;
+	color: black;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 35px;
+	top: 15px;
+	left: 15px;
+}
+
+.GridContainer .Display #ShowMail{
+	position: absolute;
+	top: 76px;
+	color: black;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: small;
+	left: 15px;
+}
+
+.GridContainer .Display #ShowMobile{
+	position: absolute;
+	top: 95px;
+	color: black;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: small;
+	left: 15px;
+}
+
+/*Form Display*/
+
+.AddForm{
+	position: absolute;
+    border: 0px solid black;
+    bottom: 40px;
+    left: 450px;
+    width: 100%;
+    height: 600px;
+    max-width: 900px;
+	box-sizing: border-box;
+}
+
+.FormVisible{
+	visibility: hidden;
+}
+
+#Name{
+	font-weight: bold;
+}
+
+.Rows{
+	position: relative;
+	top: 35px;
+	font-weight: bold;
+}
+
+.InputBox{
+	position: relative;
+	top: 30px;
+	right: 50px;
+	width: 988px;
+	height: 30px;
+}
+
+.MobileRow{
+	position: relative;
+	top: 80px;
+	font-weight: bold;
+}
+
+.MobileBox{
+	position: absolute;
+	top: 25px;
+	left: 4px;
+	width: 480px;
+	height: 30px;
+}
+
+.LandlineRow{
+	position: absolute;
+	top: 142px;
+	left: 530px;
+	font-weight: bold;
+}
+
+.LandlineBox{
+	position: absolute;
+	top: 30px;
+	left: 2px;
+	width: 460px;
+	height: 30px;
+}
+
+.WebsiteRow{
+	position: absolute;
+	top: 210px;
+	font-weight: bold;
+}
+
+.WebsiteBox{
+	position: absolute;
+	top: 30px;
+	left: 4px;
+	width: 988px;
+	height: 30px;
+}
+
+.AddressRow{
+	position: absolute;
+	top: 280px;
+	font-weight: bold;
+}
+
+.AddressBox{
+	position: absolute;
+	top: 30px;
+	left: 4px;
+	width: 988px;
+	height: 220px;
+}
+
+.ButtonRow{
+	position: absolute;
+	top: 540px;
+	left: 4px;
+}
+
+.ButtonBox{
+	background-color: rgb(39, 204, 39);
+	border: 0px solid black;
+	width: 90px;
+	height: 30px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.CloseButton{
+	position: absolute;
+	left: 900px;
+	background-color: red;
+	border: 0px solid black;
+	width: 90px;
+	height: 30px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+/* Display form content */
+
+.DisplayForm{
+	position: absolute;
+    border: 0px solid black;
+    top: 272px;
+    left: 550px;
+    width: 100%;
+    height: 450px;
+    max-width: 600px;
+	visibility: visible;
+}
+
+.DisplayForm .EditImage{
+	position: absolute;
+	top: 6px;
+	left: 600px;
+	height: 20px;
+}
+
+.DisplayForm .DeleteImage{
+ 	position: absolute;
+	top: 5px;
+	left: 690px;
+	height: 20px;
+}
+
+.DisplayForm .EditLink{
+	position: absolute;
+	top: 6px;
+	left: 630px;
+	text-decoration: none;
+	color: black;
+	font-size: large;
+}
+
+.DisplayForm .DeleteLink{
+	position: absolute;
+	top: 6px;
+	left: 720px;
+	text-decoration: none;
+	color: black;
+	font-size: large;
+}
+
+.DisplayForm #GetFormName{
+	position: absolute;
+	left: 30px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.DisplayForm #GetFormMail{
+	position: absolute;
+	top: 75px;
+	left: 32px;
+	font-weight: lighter;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.DisplayForm #GetFormMobile{
+	position: absolute;
+	top: 130px;
+	left: 32px;
+	font-weight: lighter;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.DisplayForm #GetFormLandline{
+	position: absolute;
+	top: 160px;
+	left: 32px;
+	font-weight: lighter;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.DisplayForm #GetFormWebsite{
+	position: absolute;
+	top: 220px;
+	left: 32px;
+	font-weight: lighter;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.DisplayForm #GetFormAddress{
+	position: absolute;
+	top: 260px;
+	left: 32px;
+	font-weight: lighter;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

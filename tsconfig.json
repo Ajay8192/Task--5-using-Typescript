@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "outFile": "Taskts-5.js",
+        "strict": true,      /* Enable all strict type-checking options. */
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

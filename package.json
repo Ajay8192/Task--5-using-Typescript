@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "document-ready": "^2.0.2",
+    "source-map-loader": "^4.0.1",
+    "ts-loader": "^9.4.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
+  }
+}

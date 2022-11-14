@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title> Address Book </title>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
+        <link rel="stylesheet" href="Style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="application/javascript" src="Taskts-5.js"></script> <!--intially type was application/javascript-->
+    </head>
+    <body>
+        <div class = "Heading">
+            <h1> Address Book </h1>
+        </div>
+        <div class= "Tabs">
+            <ul>
+                <li><a href="#" class="Active" onclick="home()">HOME</a></li>
+                <li><a href="#" id="onClickAdd" onclick="formVisibility()">+ADD </a></li>
+            </ul>
+            <img class= "ImageAlign" src= "blog.jpg">
+        </div>
+        <span class="Text">Contacts</span>
+        <div class="ContactsContainer">
+            <div class="GridContainer">
+            </div>
+        </div>
+        <div class="AddForm" id="PopupForm">
+            <form name="FormDetails" id="DetailsForm" class="FormVisible">
+                <table>
+                    <tr>
+                        <td id="Name">Name</td>
+                        <td>
+                            <input type="text" id="AddName" class="InputBox" onkeyup="disableButton()">
+                        </td>
+                    </tr>
+                    <tr class="Rows">
+                        <td id="Mail">Email</td>
+                        <td>
+                            <input type="text" id="AddMail" class="InputBox" onkeyup="disableButton()">
+                        </td>
+                    </tr>
+                    <tr class="MobileRow">
+                        <td id="Mobile">Mobile</td>
+                        <td>
+                            <input type="text" id="AddMobile" class="MobileBox" onkeyup="disableButton()">
+                        </td>
+                    </tr>
+                    <tr class="LandlineRow">
+                        <td id="Landline">Landline</td>
+                        <td>
+                            <input type="text" id="AddLandline" class="LandlineBox" onkeyup="disableButton()">
+                        </td>
+                    </tr>
+                    <tr class="WebsiteRow">
+                        <td id="Website">Website</td>
+                        <td>
+                            <input type="text" id="AddWebsite" class="WebsiteBox" onkeyup="disableButton()">
+                        </td>
+                    </tr>
+                    <tr class="AddressRow">
+                        <td id="Address">Address</td>
+                        <td>
+                            <textarea name = "Address" id= "AddAddress" class="AddressBox" maxlength="150" onkeyup="disableButton()"></textarea>
+                        </td>
+                    </tr>
+                    <tr class="ButtonRow">
+                        <td></td>
+                        <td>
+                            <input type = "button" value="Edit" id="EditButton" class="ButtonBox" disabled onclick="disableButton(), updateDetails()">
+                            <input type="button" value="Add" id="AddButton" class="ButtonBox" disabled onclick="detailsAdd(), disableButton()">
+                            <input type="button" value="Close" class="CloseButton" onclick="closeForm()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="DisplayForm" id="DisplayContent">
+        </div>
+    </body>
+</html>
